@@ -1,0 +1,576 @@
+{
+  "PF2E_AFFLICTION_PP": {
+    "Module": {
+      "Title": "PF2E Affliction Forge: Plagues & Pestilence",
+      "Description": "Eine originale, zweisprachige Krankheitsbibliothek für PF2E Affliction Forge mit semantischen Creature-Forge-Tags.",
+      "Library": "Seuchen & Krankheiten",
+      "LibraryDescription": "Originale Krankheiten für Wildnis, Städte, Monster und Ebenen, vollständig für die semantische Zuordnung durch die Creature Forge getaggt.",
+      "SyncFailed": "Plagues & Pestilence konnte seine Bibliothek nicht synchronisieren. Siehe Konsole."
+    },
+    "Content": {
+      "marsh-rash": {
+        "Name": "Sumpfausschlag",
+        "Description": "Ein nässender Ausschlag, der nach langem Kontakt mit warmem, brackigem Wasser auftritt. Die Haut schwillt an, juckt und wird zunehmend unbeweglich.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Juckreiz",
+          "Description": "Die Haut brennt und juckt. Du bist Unbeholfen 1."
+        },
+        "Stage2": {
+          "Name": "Geschwollene Haut",
+          "Description": "Schwellungen behindern jede feinere Bewegung. Du bist Unbeholfen 2."
+        },
+        "Stage3": {
+          "Name": "Aufgeplatzte Haut",
+          "Description": "Die entzündete Haut reißt bei Bewegung auf. Du bist Unbeholfen 2 und Kränkelnd 1."
+        }
+      },
+      "ratbite-fever": {
+        "Name": "Rattenbissfieber",
+        "Description": "Eine fiebrige Wundinfektion, die besonders häufig durch die Bisse kranker Ratten und anderer Aasfresser übertragen wird.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Wundfieber",
+          "Description": "Die Bissstelle schwillt an. Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Schüttelfrost",
+          "Description": "Fieber und Zittern schwächen dich. Du bist Kränkelnd 1 und Kraftlos 1."
+        },
+        "Stage3": {
+          "Name": "Blutfieber",
+          "Description": "Das Fieber greift auf den ganzen Körper über. Du bist Kränkelnd 2 und Kraftlos 1."
+        }
+      },
+      "redwater-fever": {
+        "Name": "Rotwasserfieber",
+        "Description": "Winzige Organismen aus verunreinigtem Süßwasser färben Urin und Schweiß rötlich und verursachen heftige Magenkrämpfe.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Krämpfe",
+          "Description": "Du leidest unter Magenkrämpfen und bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Fieber",
+          "Description": "Hohes Fieber setzt ein. Du bist Kränkelnd 2 und Ausgelaugt 1."
+        },
+        "Stage3": {
+          "Name": "Austrocknung",
+          "Description": "Der Körper verliert rasch Flüssigkeit. Du bist Kränkelnd 2 und Ausgelaugt 2."
+        }
+      },
+      "lantern-moth-ague": {
+        "Name": "Laternenmottenfieber",
+        "Description": "Die staubigen Schuppen bestimmter leuchtender Motten lösen Fieber und eine quälende Lichtempfindlichkeit aus.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Lichtscheu",
+          "Description": "Deine Augen tränen und brennen. Du bist Geblendet."
+        },
+        "Stage2": {
+          "Name": "Fieberlicht",
+          "Description": "Licht wird schmerzhaft. Du bist Geblendet und Kränkelnd 1."
+        },
+        "Stage3": {
+          "Name": "Blindfieber",
+          "Description": "Deine geschwollenen Augen schließen sich. Du bist Blind und Kränkelnd 1."
+        }
+      },
+      "ash-cough": {
+        "Name": "Aschenhusten",
+        "Description": "Feine mineralische Sporen und Asche setzen sich tief in der Lunge fest. Der trockene Husten kann jede konzentrierte Handlung zerreißen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Trockener Husten",
+          "Description": "Du hustest regelmäßig und bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Hustenanfälle",
+          "Description": "Du bist Kränkelnd 1. Vor Handlungen mit der Kategorie Konzentration ist ein einfacher Wurf gegen SG 5 nötig.",
+          "Gate": "Hustenanfall"
+        },
+        "Stage3": {
+          "Name": "Aschenlunge",
+          "Description": "Du bist Kränkelnd 2. Konzentration erfordert einen einfachen Wurf gegen SG 10, und du kannst nicht sprechen.",
+          "Gate": "Hustenanfall"
+        },
+        "Stage4": {
+          "Name": "Lungenkollaps",
+          "Description": "Du bist Bewusstlos und Ausgelaugt 2."
+        }
+      },
+      "thorn-blight": {
+        "Name": "Dornenfäule",
+        "Description": "Mikroskopische Pflanzensplitter wurzeln in offenen Wunden. Dunkle Adern breiten sich von der Verletzung aus und verhärten Muskeln und Gelenke.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Dunkle Adern",
+          "Description": "Du bist Kraftlos 1."
+        },
+        "Stage2": {
+          "Name": "Verholzung",
+          "Description": "Du bist Kraftlos 1 und Unbeholfen 1."
+        },
+        "Stage3": {
+          "Name": "Wurzelstarre",
+          "Description": "Du bist Kraftlos 2 und Unbeholfen 2."
+        }
+      },
+      "salt-lung": {
+        "Name": "Salzlunge",
+        "Description": "Ein weißer, kristalliner Belag wächst in den Atemwegen von Seeleuten und Küstenbewohnern, die verseuchte Gischt eingeatmet haben.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Heiserkeit",
+          "Description": "Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Kristallhusten",
+          "Description": "Du bist Kränkelnd 1 und Kraftlos 1."
+        },
+        "Stage3": {
+          "Name": "Salzkruste",
+          "Description": "Du bist Kränkelnd 2 und Kraftlos 1 und kannst nicht sprechen."
+        },
+        "Stage4": {
+          "Name": "Erstickung",
+          "Description": "Du bist Bewusstlos."
+        }
+      },
+      "frost-vein": {
+        "Name": "Frostader",
+        "Description": "Die Krankheit lässt blaue Linien unter der Haut wandern. Betroffene verlieren Wärme, als würde ihr Blut selbst zu Eis.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Kältegefühl",
+          "Description": "Du bist Unbeholfen 1."
+        },
+        "Stage2": {
+          "Name": "Eisiges Blut",
+          "Description": "Du bist Unbeholfen 2 und erleidest 1W6 Kälteschaden."
+        },
+        "Stage3": {
+          "Name": "Froststarre",
+          "Description": "Du bist Unbeholfen 3 und Verlangsamt 1."
+        },
+        "Stage4": {
+          "Name": "Eingefroren",
+          "Description": "Du bist Gelähmt."
+        }
+      },
+      "blackroot-rot": {
+        "Name": "Schwarzwurzelfäule",
+        "Description": "Fadenartige schwarze Pilzwurzeln wachsen entlang verletzten Gewebes und ernähren sich von der Kraft ihres Wirtes.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Schwarze Fäden",
+          "Description": "Du bist Kraftlos 1."
+        },
+        "Stage2": {
+          "Name": "Wurzelgeflecht",
+          "Description": "Du bist Kraftlos 2 und Ausgelaugt 1."
+        },
+        "Stage3": {
+          "Name": "Fleischfäule",
+          "Description": "Du bist Kraftlos 2 und Ausgelaugt 2. Trefferpunktschaden aus dieser Phase kann bis zur Heilung der Krankheit nicht geheilt werden."
+        },
+        "Stage4": {
+          "Name": "Wurzelkörper",
+          "Description": "Du bist Bewusstlos und Ausgelaugt 3."
+        }
+      },
+      "carrion-fever": {
+        "Name": "Aasfieber",
+        "Description": "Bakterien aus verwesendem Fleisch verursachen ein rasendes Fieber. Besonders Aasfresser tragen die Krankheit häufig im Maul.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Fieber",
+          "Description": "Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Schüttelfrost",
+          "Description": "Du bist Kränkelnd 2 und Kraftlos 1."
+        },
+        "Stage3": {
+          "Name": "Delirium",
+          "Description": "Du bist Kränkelnd 2 und Benommen 2."
+        },
+        "Stage4": {
+          "Name": "Fieberkoma",
+          "Description": "Du bist Bewusstlos."
+        }
+      },
+      "mirelung": {
+        "Name": "Moorlunge",
+        "Description": "Ein dunkler Schleim legt sich in die Lunge und riecht nach fauligem Torf. Jeder Atemzug wird schwerer, bis selbst Bewegung zur Anstrengung wird.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Schwerer Atem",
+          "Description": "Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Torfhusten",
+          "Description": "Du bist Kränkelnd 2 und Erschöpft."
+        },
+        "Stage3": {
+          "Name": "Mooratem",
+          "Description": "Du bist Kränkelnd 2, Erschöpft und Verlangsamt 1."
+        },
+        "Stage4": {
+          "Name": "Atemstillstand",
+          "Description": "Du bist Bewusstlos."
+        }
+      },
+      "sporewake": {
+        "Name": "Sporenwacht",
+        "Description": "Unsichtbare Pilzsporen keimen in den Nebenhöhlen und stoßen in regelmäßigen Schüben lähmende Stoffe aus.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Sporenkeimung",
+          "Description": "Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Pilzfieber",
+          "Description": "Du bist Kränkelnd 2 und Benommen 1."
+        },
+        "Stage3": {
+          "Name": "Sporenschübe",
+          "Description": "Du bist Kränkelnd 2 und Benommen 2. Zusätzlich verursacht die Krankheit alle 6 Stunden 1W6 Giftschaden.",
+          "Periodic": "Sporenschub"
+        }
+      },
+      "sewer-crown": {
+        "Name": "Kloakenkrone",
+        "Description": "Schmerzhafte, ringförmige Schwellungen entstehen an Hals und Schläfen. Die Krankheit gedeiht in dicht besiedelten Kanalsystemen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Schwellungen",
+          "Description": "Du bist Kränkelnd 1 und Benommen 1."
+        },
+        "Stage2": {
+          "Name": "Kronenfieber",
+          "Description": "Du bist Kränkelnd 2 und Benommen 2."
+        },
+        "Stage3": {
+          "Name": "Hirndruck",
+          "Description": "Du bist Kränkelnd 2, Benommen 3 und Verlangsamt 1."
+        },
+        "Stage4": {
+          "Name": "Fieberkoma",
+          "Description": "Du bist Bewusstlos."
+        }
+      },
+      "glassblood": {
+        "Name": "Glasblut",
+        "Description": "Eine arkane Infektion lässt Blutgefäße spröde und durchsichtig werden. Unter Belastung reißen sie auf wie feine Glasfasern.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Spröde Adern",
+          "Description": "Du bist Ausgelaugt 1."
+        },
+        "Stage2": {
+          "Name": "Glasadern",
+          "Description": "Du bist Ausgelaugt 1 und erleidest 1W6 anhaltenden Blutungsschaden."
+        },
+        "Stage3": {
+          "Name": "Splitterblut",
+          "Description": "Du bist Ausgelaugt 2 und erleidest 2W6 anhaltenden Blutungsschaden."
+        },
+        "Stage4": {
+          "Name": "Gefäßbruch",
+          "Description": "Du bist Bewusstlos und Ausgelaugt 3."
+        }
+      },
+      "dreamscar-fever": {
+        "Name": "Traumnarbenfieber",
+        "Description": "Die Krankheit befällt zuerst den Schlaf. Wunden aus den Träumen erscheinen als blasse Narben am Körper und hinterlassen echte Erschöpfung.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Unruhiger Schlaf",
+          "Description": "Du bist Erschöpft."
+        },
+        "Stage2": {
+          "Name": "Traumnarben",
+          "Description": "Du bist Erschöpft und Verängstigt 1."
+        },
+        "Stage3": {
+          "Name": "Wachtraum",
+          "Description": "Du bist Benommen 2 und Verängstigt 2."
+        },
+        "Stage4": {
+          "Name": "Traumschlaf",
+          "Description": "Du bist Bewusstlos und Benommen 3."
+        }
+      },
+      "ember-pox": {
+        "Name": "Glutpocken",
+        "Description": "Glühende Pusteln bilden sich unter der Haut und platzen in winzigen Funkenstößen auf. Fieber und Hitze nehmen mit jeder Phase zu.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Glutpunkte",
+          "Description": "Du bist Kränkelnd 1 und erleidest 1W6 Feuerschaden."
+        },
+        "Stage2": {
+          "Name": "Feuerfieber",
+          "Description": "Du bist Kränkelnd 2 und erleidest 2W6 Feuerschaden."
+        },
+        "Stage3": {
+          "Name": "Funkenhaut",
+          "Description": "Du bist Kränkelnd 2, Kraftlos 2 und erleidest 3W6 Feuerschaden."
+        },
+        "Stage4": {
+          "Name": "Ausgebrannt",
+          "Description": "Du bist Bewusstlos und Ausgelaugt 2."
+        }
+      },
+      "grave-mold": {
+        "Name": "Grabesschimmel",
+        "Description": "Aschgrauer Schimmel wächst auf Leichen, Gruftmauern und schließlich im lebenden Gewebe. Er nährt sich von Wärme und Lebenskraft.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Graue Flecken",
+          "Description": "Du bist Ausgelaugt 1."
+        },
+        "Stage2": {
+          "Name": "Kalter Schimmel",
+          "Description": "Du bist Ausgelaugt 2 und erleidest 2W6 Leerenschaden."
+        },
+        "Stage3": {
+          "Name": "Grabkälte",
+          "Description": "Du bist Ausgelaugt 2, Verlangsamt 1 und erleidest 3W6 Leerenschaden."
+        },
+        "Stage4": {
+          "Name": "Leichenstarre",
+          "Description": "Du bist Gelähmt und Ausgelaugt 3."
+        }
+      },
+      "hollow-fever": {
+        "Name": "Hohlfieber",
+        "Description": "Blasse Parasiten nisten sich in den Verdauungsorganen ein und zehren den Wirt von innen aus. Der Bauch wirkt dabei unnatürlich eingefallen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Hunger",
+          "Description": "Du bist Kränkelnd 1 und Ausgelaugt 1."
+        },
+        "Stage2": {
+          "Name": "Auszehrung",
+          "Description": "Du bist Kränkelnd 2 und Ausgelaugt 2."
+        },
+        "Stage3": {
+          "Name": "Hohlkörper",
+          "Description": "Du bist Kränkelnd 2, Ausgelaugt 3 und Kraftlos 2."
+        },
+        "Stage4": {
+          "Name": "Zusammenbruch",
+          "Description": "Du bist Bewusstlos und Ausgelaugt 3."
+        }
+      },
+      "whisperworms": {
+        "Name": "Flüsterwürmer",
+        "Description": "Fadenwürmer von fremdartiger Herkunft wandern bis zum Innenohr und Nervensystem. Ihre Bewegungen klingen für den Wirt wie geflüsterte Stimmen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Flüstern",
+          "Description": "Du bist Benommen 1."
+        },
+        "Stage2": {
+          "Name": "Stimmen",
+          "Description": "Du bist Benommen 2 und Verängstigt 1."
+        },
+        "Stage3": {
+          "Name": "Fremde Gedanken",
+          "Description": "Du bist Benommen 3 und Verwirrt."
+        },
+        "Stage4": {
+          "Name": "Schwarmgeist",
+          "Description": "Du bist Verwirrt und Verlangsamt 1; Schaden beendet die Verwirrung nicht automatisch."
+        }
+      },
+      "rift-ague": {
+        "Name": "Rissfieber",
+        "Description": "Nähe zu instabilen Ebenenrissen kann Wahrnehmung und Körperrhythmus entkoppeln. Betroffene erleben Sekunden doppelt und Stunden in einem Atemzug.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Zeitstottern",
+          "Description": "Du bist Benommen 1."
+        },
+        "Stage2": {
+          "Name": "Versatz",
+          "Description": "Du bist Benommen 2 und Verlangsamt 1."
+        },
+        "Stage3": {
+          "Name": "Risshall",
+          "Description": "Du bist Benommen 3, Verlangsamt 1 und Verwirrt."
+        },
+        "Stage4": {
+          "Name": "Aus dem Takt",
+          "Description": "Du bist Bewusstlos und Benommen 4."
+        }
+      },
+      "crownspore": {
+        "Name": "Kronensporen",
+        "Description": "Goldene Sporen treiben fadenartige Fruchtkörper durch Kopfhaut und Nacken. Im Endstadium versucht der Pilz, den Wirt in einen wandernden Sporenstock zu verwandeln.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Goldstaub",
+          "Description": "Du bist Kränkelnd 1 und Benommen 1."
+        },
+        "Stage2": {
+          "Name": "Sporenkrone",
+          "Description": "Du bist Kränkelnd 2 und Benommen 2."
+        },
+        "Stage3": {
+          "Name": "Myzelgriff",
+          "Description": "Du bist Kränkelnd 2, Benommen 3 und Verlangsamt 1."
+        },
+        "Stage4": {
+          "Name": "Sporenwirt",
+          "Description": "Du bist Verwirrt, Kraftlos 3 und Verlangsamt 1."
+        }
+      },
+      "starfall-sickness": {
+        "Name": "Sternenfallseuche",
+        "Description": "Staub von fremdartigen Meteoriten lässt Haut und Knochen mit kaltem Licht schimmern. Der Körper beginnt, auf eine unbekannte Physik zu reagieren.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Kaltes Leuchten",
+          "Description": "Du bist Ausgelaugt 1 und Geblendet."
+        },
+        "Stage2": {
+          "Name": "Fremde Dichte",
+          "Description": "Du bist Ausgelaugt 2 und Unbeholfen 2."
+        },
+        "Stage3": {
+          "Name": "Sternenknochen",
+          "Description": "Du bist Ausgelaugt 3, Unbeholfen 2 und Verlangsamt 1."
+        },
+        "Stage4": {
+          "Name": "Fremdkörper",
+          "Description": "Du bist Gelähmt und Ausgelaugt 3."
+        }
+      },
+      "worldblight": {
+        "Name": "Weltenfäule",
+        "Description": "Ein aggressives Myzel befällt Fleisch, Pflanzen und Boden zugleich. In der Nähe Erkrankter welken Blätter, und in ihren Wunden sprießen dunkle Hyphen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Welken",
+          "Description": "Du bist Kraftlos 2 und Ausgelaugt 1."
+        },
+        "Stage2": {
+          "Name": "Schwarzmyzel",
+          "Description": "Du bist Kraftlos 3 und Ausgelaugt 2 und erleidest 3W6 Leerenschaden. Schaden durch die Weltenfäule kann bis zur Heilung der Krankheit nicht geheilt werden."
+        },
+        "Stage3": {
+          "Name": "Fäulekörper",
+          "Description": "Du bist Kraftlos 3, Ausgelaugt 3 und Verlangsamt 1 und erleidest 4W6 Leerenschaden. Schaden durch die Weltenfäule kann bis zur Heilung der Krankheit nicht geheilt werden."
+        },
+        "Stage4": {
+          "Name": "Fäulnisstarre",
+          "Description": "Du bist Gelähmt und Ausgelaugt 4."
+        },
+        "Stage5": {
+          "Name": "Weltenfraß",
+          "Description": "Die Weltenfäule verzehrt den Wirt vollständig. Dies ist ein Todeseffekt."
+        }
+      },
+      "pale-doom": {
+        "Name": "Bleicher Untergang",
+        "Description": "Eine krankhafte Leerenresonanz bleicht Haut, Stimme und schließlich die Lebenskraft aus. Mächtige Untote und verseuchte Grabstätten können sie wie einen kalten Schatten verbreiten.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Bleichheit",
+          "Description": "Du bist Ausgelaugt 1 und Kraftlos 1."
+        },
+        "Stage2": {
+          "Name": "Stimmenverlust",
+          "Description": "Du bist Ausgelaugt 2 und Kraftlos 2 und kannst nicht sprechen."
+        },
+        "Stage3": {
+          "Name": "Leerenfrost",
+          "Description": "Du bist Ausgelaugt 3, Verlangsamt 1 und erleidest 4W6 Leerenschaden."
+        },
+        "Stage4": {
+          "Name": "Bleiche Starre",
+          "Description": "Du bist Gelähmt, Ausgelaugt 4 und erleidest 6W6 Leerenschaden."
+        },
+        "Stage5": {
+          "Name": "Untergang",
+          "Description": "Die Leerenresonanz löscht die Lebenskraft des Wirtes aus. Dies ist ein Todeseffekt."
+        }
+      },
+      "sunscale-fever": {
+        "Name": "Sonnenschuppenfieber",
+        "Description": "Eine von Wüstenreptilien übertragene Infektion lässt die Haut austrocknen, schuppen und schmerzhaft auf Hitze reagieren.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Trockene Haut",
+          "Description": "Du bist Kränkelnd 1."
+        },
+        "Stage2": {
+          "Name": "Schuppung",
+          "Description": "Du bist Kränkelnd 1 und Unbeholfen 1."
+        },
+        "Stage3": {
+          "Name": "Hitzefieber",
+          "Description": "Du bist Kränkelnd 2, Unbeholfen 2 und Erschöpft."
+        }
+      },
+      "reef-rot": {
+        "Name": "Rifffäule",
+        "Description": "Eine aggressive Meerwasserinfektion verfärbt Wunden türkis und lässt das umliegende Gewebe anschwellen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Türkiswunde",
+          "Description": "Du bist Kränkelnd 1 und Unbeholfen 1."
+        },
+        "Stage2": {
+          "Name": "Riffschwellung",
+          "Description": "Du bist Kränkelnd 2 und Unbeholfen 2."
+        },
+        "Stage3": {
+          "Name": "Fleischfäule",
+          "Description": "Du bist Kränkelnd 2, Unbeholfen 3 und Kraftlos 2."
+        }
+      },
+      "sky-chill": {
+        "Name": "Himmelsfrösteln",
+        "Description": "Eine Atemwegsinfektion aus dünner Höhenluft beginnt mit harmlosem Zittern und endet in gefährlicher Orientierungslosigkeit.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Frösteln",
+          "Description": "Du bist Erschöpft."
+        },
+        "Stage2": {
+          "Name": "Höhenfieber",
+          "Description": "Du bist Erschöpft und Benommen 1."
+        },
+        "Stage3": {
+          "Name": "Orientierungsverlust",
+          "Description": "Du bist Benommen 2, Verlangsamt 1 und Verwirrt."
+        }
+      },
+      "moonfen-ague": {
+        "Name": "Mondmoor-Fieber",
+        "Description": "Ein Feenfieber aus nebelverhangenen Mooren lässt Erkrankte im Wachzustand träumen und fremden Irrlichtern folgen.",
+        "SaveLabel": "Krankheits-Rettungswurf",
+        "Stage1": {
+          "Name": "Irrlichtträume",
+          "Description": "Du bist Benommen 1 und Verängstigt 1."
+        },
+        "Stage2": {
+          "Name": "Wachschlaf",
+          "Description": "Du bist Benommen 2 und Verlangsamt 1."
+        },
+        "Stage3": {
+          "Name": "Moorlocken",
+          "Description": "Du bist Benommen 3 und Verwirrt."
+        },
+        "Stage4": {
+          "Name": "Traumgefangen",
+          "Description": "Du bist Bewusstlos und Benommen 4."
+        }
+      }
+    }
+  }
+}

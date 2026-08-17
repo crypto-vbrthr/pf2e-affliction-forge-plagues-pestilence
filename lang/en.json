@@ -1,0 +1,576 @@
+{
+  "PF2E_AFFLICTION_PP": {
+    "Module": {
+      "Title": "PF2E Affliction Forge: Plagues & Pestilence",
+      "Description": "An original bilingual disease library for PF2E Affliction Forge with semantic Creature Forge tags.",
+      "Library": "Plagues & Pestilence",
+      "LibraryDescription": "Original diseases for wilderness, cities, monsters, and planar threats, fully tagged for semantic Creature Forge assignment.",
+      "SyncFailed": "Plagues & Pestilence could not synchronize its library. See console."
+    },
+    "Content": {
+      "marsh-rash": {
+        "Name": "Marsh Rash",
+        "Description": "A weeping rash caused by prolonged contact with warm, brackish water. The skin swells, itches, and gradually stiffens.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Itching",
+          "Description": "The skin burns and itches. You are clumsy 1."
+        },
+        "Stage2": {
+          "Name": "Swollen Skin",
+          "Description": "Swelling hinders fine movement. You are clumsy 2."
+        },
+        "Stage3": {
+          "Name": "Cracked Skin",
+          "Description": "Inflamed skin splits with movement. You are clumsy 2 and sickened 1."
+        }
+      },
+      "ratbite-fever": {
+        "Name": "Ratbite Fever",
+        "Description": "A feverish wound infection most often spread by the bites of diseased rats and other scavengers.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Wound Fever",
+          "Description": "The bite swells. You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Shaking Fever",
+          "Description": "Fever and shaking weaken you. You are sickened 1 and enfeebled 1."
+        },
+        "Stage3": {
+          "Name": "Blood Fever",
+          "Description": "The fever spreads through the body. You are sickened 2 and enfeebled 1."
+        }
+      },
+      "redwater-fever": {
+        "Name": "Redwater Fever",
+        "Description": "Minute organisms in fouled fresh water tint sweat and urine red while causing violent abdominal cramps.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Cramps",
+          "Description": "You suffer abdominal cramps and are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Fever",
+          "Description": "High fever sets in. You are sickened 2 and drained 1."
+        },
+        "Stage3": {
+          "Name": "Dehydration",
+          "Description": "The body rapidly loses fluid. You are sickened 2 and drained 2."
+        }
+      },
+      "lantern-moth-ague": {
+        "Name": "Lantern Moth Ague",
+        "Description": "Dusty scales shed by certain luminous moths cause fever and agonizing sensitivity to light.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Light Sensitivity",
+          "Description": "Your eyes water and burn. You are dazzled."
+        },
+        "Stage2": {
+          "Name": "Fever-Light",
+          "Description": "Light becomes painful. You are dazzled and sickened 1."
+        },
+        "Stage3": {
+          "Name": "Blind Fever",
+          "Description": "Your swollen eyes close. You are blinded and sickened 1."
+        }
+      },
+      "ash-cough": {
+        "Name": "Ash Cough",
+        "Description": "Fine mineral spores and ash lodge deep in the lungs. The dry cough can break even the most focused action.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Dry Cough",
+          "Description": "You cough frequently and are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Coughing Fits",
+          "Description": "You are sickened 1. Before an action with the concentrate trait, attempt a DC 5 flat check.",
+          "Gate": "Coughing Fit"
+        },
+        "Stage3": {
+          "Name": "Ash Lung",
+          "Description": "You are sickened 2. Concentrating requires a DC 10 flat check, and you cannot speak.",
+          "Gate": "Coughing Fit"
+        },
+        "Stage4": {
+          "Name": "Collapsed Lung",
+          "Description": "You are unconscious and drained 2."
+        }
+      },
+      "thorn-blight": {
+        "Name": "Thorn Blight",
+        "Description": "Microscopic plant splinters take root in open wounds. Dark veins spread from the injury and stiffen muscles and joints.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Dark Veins",
+          "Description": "You are enfeebled 1."
+        },
+        "Stage2": {
+          "Name": "Lignification",
+          "Description": "You are enfeebled 1 and clumsy 1."
+        },
+        "Stage3": {
+          "Name": "Root-Stiffness",
+          "Description": "You are enfeebled 2 and clumsy 2."
+        }
+      },
+      "salt-lung": {
+        "Name": "Salt Lung",
+        "Description": "A white crystalline growth forms in the airways of sailors and coast dwellers who inhale tainted sea spray.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Hoarseness",
+          "Description": "You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Crystal Cough",
+          "Description": "You are sickened 1 and enfeebled 1."
+        },
+        "Stage3": {
+          "Name": "Salt Crust",
+          "Description": "You are sickened 2 and enfeebled 1 and cannot speak."
+        },
+        "Stage4": {
+          "Name": "Suffocation",
+          "Description": "You are unconscious."
+        }
+      },
+      "frost-vein": {
+        "Name": "Frost Vein",
+        "Description": "Blue lines creep beneath the skin as the disease steals warmth, as though the victim’s blood itself were turning to ice.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Chill",
+          "Description": "You are clumsy 1."
+        },
+        "Stage2": {
+          "Name": "Icy Blood",
+          "Description": "You are clumsy 2 and take 1d6 cold damage."
+        },
+        "Stage3": {
+          "Name": "Frost Stiffness",
+          "Description": "You are clumsy 3 and slowed 1."
+        },
+        "Stage4": {
+          "Name": "Frozen",
+          "Description": "You are paralyzed."
+        }
+      },
+      "blackroot-rot": {
+        "Name": "Blackroot Rot",
+        "Description": "Threadlike black fungal roots grow along injured tissue and feed on the strength of their host.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Black Threads",
+          "Description": "You are enfeebled 1."
+        },
+        "Stage2": {
+          "Name": "Root Web",
+          "Description": "You are enfeebled 2 and drained 1."
+        },
+        "Stage3": {
+          "Name": "Flesh Rot",
+          "Description": "You are enfeebled 2 and drained 2. Hit point damage from this stage cannot be healed until the disease ends."
+        },
+        "Stage4": {
+          "Name": "Rooted Body",
+          "Description": "You are unconscious and drained 3."
+        }
+      },
+      "carrion-fever": {
+        "Name": "Carrion Fever",
+        "Description": "Bacteria from rotting flesh cause a raging fever. Scavengers often carry the disease in their mouths.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Fever",
+          "Description": "You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Shivering",
+          "Description": "You are sickened 2 and enfeebled 1."
+        },
+        "Stage3": {
+          "Name": "Delirium",
+          "Description": "You are sickened 2 and stupefied 2."
+        },
+        "Stage4": {
+          "Name": "Fever Coma",
+          "Description": "You are unconscious."
+        }
+      },
+      "mirelung": {
+        "Name": "Mirelung",
+        "Description": "Dark mucus settles in the lungs and smells of rotten peat. Each breath grows harder until even movement becomes exhausting.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Labored Breath",
+          "Description": "You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Peat Cough",
+          "Description": "You are sickened 2 and fatigued."
+        },
+        "Stage3": {
+          "Name": "Mire Breath",
+          "Description": "You are sickened 2, fatigued, and slowed 1."
+        },
+        "Stage4": {
+          "Name": "Breathless",
+          "Description": "You are unconscious."
+        }
+      },
+      "sporewake": {
+        "Name": "Sporewake",
+        "Description": "Invisible fungal spores germinate in the sinuses and release paralytic compounds in recurring waves.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Spore Germination",
+          "Description": "You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Fungal Fever",
+          "Description": "You are sickened 2 and stupefied 1."
+        },
+        "Stage3": {
+          "Name": "Spore Surges",
+          "Description": "You are sickened 2 and stupefied 2. In addition, the disease deals 1d6 poison damage every 6 hours.",
+          "Periodic": "Spore Surge"
+        }
+      },
+      "sewer-crown": {
+        "Name": "Sewer Crown",
+        "Description": "Painful ring-shaped swellings form around the neck and temples. The disease thrives in densely populated sewer systems.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Swellings",
+          "Description": "You are sickened 1 and stupefied 1."
+        },
+        "Stage2": {
+          "Name": "Crown Fever",
+          "Description": "You are sickened 2 and stupefied 2."
+        },
+        "Stage3": {
+          "Name": "Cranial Pressure",
+          "Description": "You are sickened 2, stupefied 3, and slowed 1."
+        },
+        "Stage4": {
+          "Name": "Fever Coma",
+          "Description": "You are unconscious."
+        }
+      },
+      "glassblood": {
+        "Name": "Glassblood",
+        "Description": "An arcane infection makes blood vessels brittle and translucent. Under strain they split like fine glass fibers.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Brittle Veins",
+          "Description": "You are drained 1."
+        },
+        "Stage2": {
+          "Name": "Glass Veins",
+          "Description": "You are drained 1 and take 1d6 persistent bleed damage."
+        },
+        "Stage3": {
+          "Name": "Splintered Blood",
+          "Description": "You are drained 2 and take 2d6 persistent bleed damage."
+        },
+        "Stage4": {
+          "Name": "Vascular Collapse",
+          "Description": "You are unconscious and drained 3."
+        }
+      },
+      "dreamscar-fever": {
+        "Name": "Dreamscar Fever",
+        "Description": "The disease attacks sleep first. Wounds suffered in dreams appear as pale scars on the body and leave real exhaustion behind.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Restless Sleep",
+          "Description": "You are fatigued."
+        },
+        "Stage2": {
+          "Name": "Dream Scars",
+          "Description": "You are fatigued and frightened 1."
+        },
+        "Stage3": {
+          "Name": "Waking Dream",
+          "Description": "You are stupefied 2 and frightened 2."
+        },
+        "Stage4": {
+          "Name": "Dream Sleep",
+          "Description": "You are unconscious and stupefied 3."
+        }
+      },
+      "ember-pox": {
+        "Name": "Ember Pox",
+        "Description": "Glowing pustules form beneath the skin and burst in tiny sprays of sparks. Fever and heat intensify with each stage.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Ember Spots",
+          "Description": "You are sickened 1 and take 1d6 fire damage."
+        },
+        "Stage2": {
+          "Name": "Fire Fever",
+          "Description": "You are sickened 2 and take 2d6 fire damage."
+        },
+        "Stage3": {
+          "Name": "Sparking Skin",
+          "Description": "You are sickened 2, enfeebled 2, and take 3d6 fire damage."
+        },
+        "Stage4": {
+          "Name": "Burned Out",
+          "Description": "You are unconscious and drained 2."
+        }
+      },
+      "grave-mold": {
+        "Name": "Grave Mold",
+        "Description": "Ash-gray mold grows on corpses, crypt walls, and eventually living tissue. It feeds on warmth and vitality.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Gray Patches",
+          "Description": "You are drained 1."
+        },
+        "Stage2": {
+          "Name": "Cold Mold",
+          "Description": "You are drained 2 and take 2d6 void damage."
+        },
+        "Stage3": {
+          "Name": "Grave Chill",
+          "Description": "You are drained 2, slowed 1, and take 3d6 void damage."
+        },
+        "Stage4": {
+          "Name": "Corpse Stiffness",
+          "Description": "You are paralyzed and drained 3."
+        }
+      },
+      "hollow-fever": {
+        "Name": "Hollow Fever",
+        "Description": "Pale parasites nest in the digestive organs and consume the host from within, leaving the abdomen unnaturally hollow.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Hunger",
+          "Description": "You are sickened 1 and drained 1."
+        },
+        "Stage2": {
+          "Name": "Wasting",
+          "Description": "You are sickened 2 and drained 2."
+        },
+        "Stage3": {
+          "Name": "Hollow Body",
+          "Description": "You are sickened 2, drained 3, and enfeebled 2."
+        },
+        "Stage4": {
+          "Name": "Collapse",
+          "Description": "You are unconscious and drained 3."
+        }
+      },
+      "whisperworms": {
+        "Name": "Whisperworms",
+        "Description": "Threadworms of alien origin migrate to the inner ear and nervous system. Their movements sound like whispered voices to the host.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Whispers",
+          "Description": "You are stupefied 1."
+        },
+        "Stage2": {
+          "Name": "Voices",
+          "Description": "You are stupefied 2 and frightened 1."
+        },
+        "Stage3": {
+          "Name": "Alien Thoughts",
+          "Description": "You are stupefied 3 and confused."
+        },
+        "Stage4": {
+          "Name": "Swarm Mind",
+          "Description": "You are confused and slowed 1; damage does not automatically end the confusion."
+        }
+      },
+      "rift-ague": {
+        "Name": "Rift Ague",
+        "Description": "Proximity to unstable planar rifts can uncouple perception from bodily rhythm. Victims experience seconds twice and hours in a single breath.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Time Stutter",
+          "Description": "You are stupefied 1."
+        },
+        "Stage2": {
+          "Name": "Desynchronization",
+          "Description": "You are stupefied 2 and slowed 1."
+        },
+        "Stage3": {
+          "Name": "Rift Echo",
+          "Description": "You are stupefied 3, slowed 1, and confused."
+        },
+        "Stage4": {
+          "Name": "Out of Time",
+          "Description": "You are unconscious and stupefied 4."
+        }
+      },
+      "crownspore": {
+        "Name": "Crownspore",
+        "Description": "Golden spores push threadlike fruiting bodies through the scalp and neck. In the final stage the fungus attempts to turn its host into a walking spore colony.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Gold Dust",
+          "Description": "You are sickened 1 and stupefied 1."
+        },
+        "Stage2": {
+          "Name": "Spore Crown",
+          "Description": "You are sickened 2 and stupefied 2."
+        },
+        "Stage3": {
+          "Name": "Mycelial Grip",
+          "Description": "You are sickened 2, stupefied 3, and slowed 1."
+        },
+        "Stage4": {
+          "Name": "Spore Host",
+          "Description": "You are confused, enfeebled 3, and slowed 1."
+        }
+      },
+      "starfall-sickness": {
+        "Name": "Starfall Sickness",
+        "Description": "Dust from alien meteorites makes skin and bone shimmer with cold light. The body begins to answer to an unknown physics.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Cold Glow",
+          "Description": "You are drained 1 and dazzled."
+        },
+        "Stage2": {
+          "Name": "Alien Density",
+          "Description": "You are drained 2 and clumsy 2."
+        },
+        "Stage3": {
+          "Name": "Star-Bone",
+          "Description": "You are drained 3, clumsy 2, and slowed 1."
+        },
+        "Stage4": {
+          "Name": "Alien Body",
+          "Description": "You are paralyzed and drained 3."
+        }
+      },
+      "worldblight": {
+        "Name": "Worldblight",
+        "Description": "An aggressive mycelium infects flesh, plants, and soil at once. Leaves wilt near the diseased, and dark hyphae sprout from their wounds.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Withering",
+          "Description": "You are enfeebled 2 and drained 1."
+        },
+        "Stage2": {
+          "Name": "Black Mycelium",
+          "Description": "You are enfeebled 3 and drained 2 and take 3d6 void damage. Damage caused by Worldblight cannot be healed until the disease ends."
+        },
+        "Stage3": {
+          "Name": "Blighted Body",
+          "Description": "You are enfeebled 3, drained 3, and slowed 1 and take 4d6 void damage. Damage caused by Worldblight cannot be healed until the disease ends."
+        },
+        "Stage4": {
+          "Name": "Blight Stasis",
+          "Description": "You are paralyzed and drained 4."
+        },
+        "Stage5": {
+          "Name": "World-Eaten",
+          "Description": "Worldblight consumes the host entirely. This is a death effect."
+        }
+      },
+      "pale-doom": {
+        "Name": "Pale Doom",
+        "Description": "A diseased void resonance bleaches skin, voice, and eventually life force itself. Powerful undead and tainted tombs can spread it like a cold shadow.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Pallor",
+          "Description": "You are drained 1 and enfeebled 1."
+        },
+        "Stage2": {
+          "Name": "Fading Voice",
+          "Description": "You are drained 2 and enfeebled 2 and cannot speak."
+        },
+        "Stage3": {
+          "Name": "Void Chill",
+          "Description": "You are drained 3, slowed 1, and take 4d6 void damage."
+        },
+        "Stage4": {
+          "Name": "Pale Stasis",
+          "Description": "You are paralyzed, drained 4, and take 6d6 void damage."
+        },
+        "Stage5": {
+          "Name": "Doom",
+          "Description": "The void resonance extinguishes the host’s life force. This is a death effect."
+        }
+      },
+      "sunscale-fever": {
+        "Name": "Sunscale Fever",
+        "Description": "An infection spread by desert reptiles dries and scales the skin, making heat painfully difficult to endure.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Dry Skin",
+          "Description": "You are sickened 1."
+        },
+        "Stage2": {
+          "Name": "Scaling",
+          "Description": "You are sickened 1 and clumsy 1."
+        },
+        "Stage3": {
+          "Name": "Heat Fever",
+          "Description": "You are sickened 2, clumsy 2, and fatigued."
+        }
+      },
+      "reef-rot": {
+        "Name": "Reef Rot",
+        "Description": "An aggressive saltwater infection turns wounds turquoise and swells the surrounding tissue.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Turquoise Wound",
+          "Description": "You are sickened 1 and clumsy 1."
+        },
+        "Stage2": {
+          "Name": "Reef Swelling",
+          "Description": "You are sickened 2 and clumsy 2."
+        },
+        "Stage3": {
+          "Name": "Tissue Rot",
+          "Description": "You are sickened 2, clumsy 3, and enfeebled 2."
+        }
+      },
+      "sky-chill": {
+        "Name": "Sky Chill",
+        "Description": "A respiratory infection of thin high-altitude air begins with mild shivering and ends in dangerous disorientation.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Shivers",
+          "Description": "You are fatigued."
+        },
+        "Stage2": {
+          "Name": "Altitude Fever",
+          "Description": "You are fatigued and stupefied 1."
+        },
+        "Stage3": {
+          "Name": "Disorientation",
+          "Description": "You are stupefied 2, slowed 1, and confused."
+        }
+      },
+      "moonfen-ague": {
+        "Name": "Moonfen Ague",
+        "Description": "A fey fever from mist-choked wetlands makes the diseased dream while awake and follow lights no one else can see.",
+        "SaveLabel": "Disease Save",
+        "Stage1": {
+          "Name": "Wisp Dreams",
+          "Description": "You are stupefied 1 and frightened 1."
+        },
+        "Stage2": {
+          "Name": "Waking Sleep",
+          "Description": "You are stupefied 2 and slowed 1."
+        },
+        "Stage3": {
+          "Name": "Fen Call",
+          "Description": "You are stupefied 3 and confused."
+        },
+        "Stage4": {
+          "Name": "Dreambound",
+          "Description": "You are unconscious and stupefied 4."
+        }
+      }
+    }
+  }
+}
