@@ -48,5 +48,8 @@
     }
   ],
   "license": "LICENSE",
-  "readme": "README.md"
+  "readme": "README.md",
+  "url": "https://github.com/crypto-vbrthr/pf2e-affliction-forge-plagues-pestilence",
+  "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-affliction-forge-plagues-pestilence/main/module.json",
+  "download": "https://github.com/crypto-vbrthr/pf2e-affliction-forge/releases/download/0.1.2/pf2e-affliction-forge-plagues-pestilence.zip"
 }
