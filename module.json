@@ -2,7 +2,7 @@
   "id": "pf2e-affliction-forge-plagues-pestilence",
   "title": "PF2E Affliction Forge: Plagues & Pestilence",
   "description": "An original bilingual disease library for PF2E Affliction Forge. Includes 28 staged diseases with standardized semantic tags for Creature Forge matching.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "authors": [
     {
       "name": "crypto-vbrthr"
@@ -51,5 +51,5 @@
   "readme": "README.md",
   "url": "https://github.com/crypto-vbrthr/pf2e-affliction-forge-plagues-pestilence",
   "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-affliction-forge-plagues-pestilence/main/module.json",
-  "download": "https://github.com/crypto-vbrthr/pf2e-affliction-forge/releases/download/0.1.2/pf2e-affliction-forge-plagues-pestilence.zip"
+  "download": "https://github.com/crypto-vbrthr/pf2e-affliction-forge-plagues-pestilence/releases/download/0.1.3/pf2e-affliction-forge-plagues-pestilence.zip"
 }
